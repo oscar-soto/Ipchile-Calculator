@@ -108,13 +108,13 @@ body {
   text-align: center;
   margin-bottom: var(--section-margin);
 
-  h1 {
+  .hero__title {
     font-size: 2.25rem;
     font-weight: bold;
     margin-bottom: 0.75rem;
   }
 
-  p {
+  .hero__text {
     width: min(80%, 25rem);
     margin: 0 auto;
     font-size: 1rem;
