@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__container">
+        <div class="header__logo left-side">
+          <a href="">
+            <img src="./assets/download.png" alt="Logo icon" />
+          </a>
+
+          <p>Convertidor De Distancia</p>
+        </div>
+
+        <nav class="header__nav">
+          <ul>
+            <li>
+              <a href="#">Calculadora</a>
+            </li>
+            <li>
+              <a href="https://github.com/oscar-soto">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main container">
+      <section class="hero">
+        <h1 class="title">Convertidor de Unidades</h1>
+        <p class="text">
+          Conversiones rápidas y precisas entre milímetros, centímetros y
+          metros.
+        </p>
+      </section>
+
+      <section class="calculator container">
+        <form action="" id="formCalculator">
+          <div class="calculator__container">
+            <label for="originValue">De</label>
+
+            <div class="calculator__input">
+              <select name="fromUnit" id="">
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="mm">Milimetro</option>
+                <option value="cm">Centimetro</option>
+                <option value="m">Metros</option>
+                <option value="km">Kilometro</option>
+              </select>
+
+              <input type="number" id="originValue" name="value" min="0" placeholder="Ej: 100" />
+            </div>
+          </div>
+
+          <div class="calculator__container">
+            <label for="transformValue">A</label>
+
+            <div class="calculator__input">
+              <select name="toUnit" id="">
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="mm">Milimetro</option>
+                <option value="cm">Centimetro</option>
+                <option value="m">Metros</option>
+                <option value="km">Kilometro</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="button">Convertir</button>
+        </form>
+      </section>
+
+      <section class="result container">
+        <h2>Resultado</h2>
+        <p id="calculator_result">0 m</p>
+      </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
